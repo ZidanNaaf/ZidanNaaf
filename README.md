@@ -1,4 +1,4 @@
-# Hi, I'm Muhammad Zidan Nafi'il Halim
+# Halo, saya Muhammad Zidan Nafi'il Halim
 
 <div align="center">
 
@@ -10,11 +10,11 @@
 
 </div>
 
-## About Me
+## Tentang Saya
 
-I am a student, developer, and technology enthusiast from Indonesia who enjoys building real systems for real users. My main interests are full stack web development, backend engineering, computer networking, IoT, Linux server administration, cyber security, automation, and audio technology.
+Saya adalah pelajar dan developer dari Indonesia yang senang membangun sistem yang benar-benar bisa dipakai. Buat saya, ngoding bukan cuma soal membuat tampilan yang jalan, tapi juga bagaimana sebuah aplikasi bisa membantu organisasi, sekolah, komunitas, atau bisnis kecil menyelesaikan masalahnya.
 
-I like learning by building. Most of my projects are not only experiments, but systems designed for organizations, schools, communities, and small businesses.
+Saya banyak bermain di dunia web development, backend, jaringan komputer, server Linux, IoT, automation, dan sedikit dunia audio. Saya suka belajar langsung lewat proyek nyata, karena dari situ biasanya masalah teknisnya lebih terasa dan proses belajarnya jadi lebih seru.
 
 ```yaml
 name: Muhammad Zidan Nafi'il Halim
@@ -23,17 +23,25 @@ role: Full Stack Web Developer, IoT Developer, Network Enthusiast
 company: CodeBoost Creative
 location: Indonesia
 focus:
-  - Web application development
-  - Backend systems
-  - IoT and embedded systems
-  - Networking and server deployment
-  - Automation
+  - Membuat aplikasi web yang berguna
+  - Merancang sistem backend
+  - Mengembangkan IoT dan embedded system
+  - Mengelola jaringan, server, dan deployment
+  - Membangun automation system
 currently_learning:
   - Docker
   - DevOps
   - Computer Vision
   - Advanced MikroTik routing
 ```
+
+## Cara Saya Membangun Sesuatu
+
+- Mulai dari masalah nyata, lalu dibuatkan sistem yang mudah dipakai.
+- Tidak hanya fokus ke tampilan, tapi juga database, keamanan, server, dan alur kerja pengguna.
+- Suka membangun dari nol supaya benar-benar paham cara kerjanya.
+- Senang menggabungkan beberapa bidang sekaligus, misalnya web, networking, IoT, dan automation.
+- Terus belajar teknologi baru, tapi tetap berusaha membuat proyek yang selesai dan bisa digunakan.
 
 ## Tech Stack
 
@@ -66,32 +74,32 @@ currently_learning:
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="44" title="VS Code" />
 </div>
 
-### Other Areas
+### Bidang Lain yang Saya Pelajari
 
-- Backend: REST API, MVC architecture, authentication, session management, file upload, QR code, PDF generation
-- Database: schema design, normalization, query optimization
-- Server: VPS deployment, SSL, domain management, reverse proxy, cron/scheduler
-- Networking: MikroTik, VLAN, PPPoE, DOCSIS, DHCP, NAT, VPN, switching, RT/RW Net concepts
-- IoT: Arduino, ESP32, relay, sensors, DFPlayer Mini, monitoring systems, serial communication
+- Backend: REST API, MVC architecture, authentication, session management, file upload, QR code, dan PDF generation
+- Database: desain tabel, normalisasi data, relasi database, dan optimasi query
+- Server: VPS deployment, SSL, domain management, reverse proxy, dan cron/scheduler
+- Networking: MikroTik, VLAN, PPPoE, DOCSIS, DHCP, NAT, VPN, switching, dan konsep RT/RW Net
+- IoT: Arduino, ESP32, relay, sensor, DFPlayer Mini, monitoring system, dan komunikasi serial
 
-## Projects I Build
+## Project yang Pernah Saya Buat
 
-- E-voting system with face verification
-- Organization letter administration system
-- Organization dashboard and cash management system
-- School organization website
-- CodeBoost Creative website
-- Personal portfolio website
-- QR generator system
-- IoT soil monitoring system
-- ESP32-based digital mixer
-- Online invoice system
-- ISP billing system
+- Sistem e-voting dengan verifikasi wajah
+- Sistem administrasi surat organisasi
+- Dashboard organisasi dan sistem kas
+- Website organisasi sekolah
+- Website CodeBoost Creative
+- Website portofolio pribadi
+- Sistem QR generator
+- Monitoring tanah berbasis IoT
+- Digital mixer berbasis ESP32
+- Sistem invoice online
+- Sistem billing ISP
 - URL shortener
-- Computer-based test system
-- Competition upload system
-- Online CV system
-- Face attendance system
+- Sistem CBT atau computer-based test
+- Sistem upload lomba
+- Sistem CV online
+- Sistem absensi wajah
 - AI music video project
 
 ## GitHub Stats
@@ -115,14 +123,14 @@ currently_learning:
 
 </div>
 
-## Current Focus
+## Fokus Saat Ini
 
-- Building more complete and documented web applications
-- Improving backend architecture, security, and testing
-- Learning Docker, DevOps, and high availability server concepts
-- Exploring AI integration, computer vision, embedded systems, and ISP infrastructure
+- Membuat aplikasi web yang lebih rapi, lengkap, dan terdokumentasi.
+- Memperdalam backend architecture, security, testing, dan performance.
+- Belajar Docker, DevOps, dan konsep high availability server.
+- Mengeksplorasi AI integration, computer vision, embedded system, dan infrastruktur ISP.
 
-## Let's Connect
+## Kontak / Let's Connect
 
 <div align="center">
 
@@ -137,7 +145,7 @@ currently_learning:
 
 <div align="center">
 
-Thanks for visiting my profile. I am always open to learning, collaborating, and building useful technology.
+Terima kasih sudah mampir ke profil saya. Saya selalu terbuka untuk belajar, berdiskusi, berkolaborasi, dan membangun teknologi yang berguna.
 
 ![Footer](https://capsule-render.vercel.app/api?type=waving&color=0:2563eb,50:0f766e,100:0f172a&height=110&section=footer)
 
