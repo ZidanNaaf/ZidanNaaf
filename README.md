@@ -1,5 +1,3 @@
-# Halo, saya Muhammad Zidan Nafi'il Halim
-
 <div align="center">
 
 ![Header](https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:0f766e,100:2563eb&height=180&section=header&text=Muhammad%20Zidan%20Nafi'il%20Halim&fontSize=34&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Full%20Stack%20Web%20Developer%20%7C%20IoT%20Developer%20%7C%20Network%20Enthusiast&descAlignY=58&descSize=16)
