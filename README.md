@@ -4,24 +4,34 @@
 
 ![Header](https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:0f766e,100:2563eb&height=180&section=header&text=Muhammad%20Zidan%20Nafi'il%20Halim&fontSize=34&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Full%20Stack%20Web%20Developer%20%7C%20IoT%20Developer%20%7C%20Network%20Enthusiast&descAlignY=58&descSize=16)
 
+<img src="https://porto.codeboost.my.id/foto.webp" width="150" alt="Foto Muhammad Zidan Nafi'il Halim" />
+
+### Halo, saya Muhammad Zidan Nafi'il Halim
+
+Mahasiswa Sistem Informasi UIN Sunan Ampel Surabaya angkatan 2026, developer, dan founder CodeBoost Creative.
+
 [![Profile Views](https://komarev.com/ghpvc/?username=ZidanNaaf&label=Profile%20Views&color=0f766e&style=for-the-badge)](https://github.com/ZidanNaaf)
 [![Followers](https://img.shields.io/github/followers/ZidanNaaf?label=Followers&style=for-the-badge&color=2563eb&logo=github)](https://github.com/ZidanNaaf?tab=followers)
 [![Focus](https://img.shields.io/badge/Focus-Web%20%7C%20IoT%20%7C%20Networking-0f172a?style=for-the-badge)](#)
+[![Portfolio](https://img.shields.io/badge/Portfolio-porto.codeboost.my.id-0f766e?style=for-the-badge&logo=google-chrome&logoColor=white)](https://porto.codeboost.my.id)
 
 </div>
 
 ## Tentang Saya
 
-Saya adalah pelajar dan developer dari Indonesia yang senang membangun sistem yang benar-benar bisa dipakai. Buat saya, ngoding bukan cuma soal membuat tampilan yang jalan, tapi juga bagaimana sebuah aplikasi bisa membantu organisasi, sekolah, komunitas, atau bisnis kecil menyelesaikan masalahnya.
+Saya adalah mahasiswa Sistem Informasi di Universitas Islam Negeri Sunan Ampel Surabaya angkatan 2026, sekaligus developer dari Gresik, Jawa Timur, Indonesia. Saya senang membangun sistem yang benar-benar bisa dipakai. Buat saya, ngoding bukan cuma soal membuat tampilan yang jalan, tapi juga bagaimana sebuah aplikasi bisa membantu organisasi, sekolah, komunitas, atau bisnis kecil menyelesaikan masalahnya.
 
-Saya banyak bermain di dunia web development, backend, jaringan komputer, server Linux, IoT, automation, dan sedikit dunia audio. Saya suka belajar langsung lewat proyek nyata, karena dari situ biasanya masalah teknisnya lebih terasa dan proses belajarnya jadi lebih seru.
+Saya banyak bermain di dunia web development, backend, jaringan komputer, server Linux, IoT, automation, dan sedikit dunia audio. Saya juga membangun CodeBoost Creative sebagai tempat untuk mengembangkan layanan dan produk digital. Saya suka belajar langsung lewat proyek nyata, karena dari situ biasanya masalah teknisnya lebih terasa dan proses belajarnya jadi lebih seru.
 
 ```yaml
 name: Muhammad Zidan Nafi'il Halim
 alias: Zidan
 role: Full Stack Web Developer, IoT Developer, Network Enthusiast
+education: Sistem Informasi, UIN Sunan Ampel Surabaya, 2026
 company: CodeBoost Creative
-location: Indonesia
+website: https://codeboost.my.id
+portfolio: https://porto.codeboost.my.id
+location: Gresik, Jawa Timur, Indonesia
 focus:
   - Membuat aplikasi web yang berguna
   - Merancang sistem backend
@@ -42,6 +52,16 @@ currently_learning:
 - Suka membangun dari nol supaya benar-benar paham cara kerjanya.
 - Senang menggabungkan beberapa bidang sekaligus, misalnya web, networking, IoT, dan automation.
 - Terus belajar teknologi baru, tapi tetap berusaha membuat proyek yang selesai dan bisa digunakan.
+
+## CodeBoost Creative
+
+CodeBoost Creative adalah brand yang saya bangun untuk mengerjakan solusi digital, mulai dari website, sistem informasi, dashboard, sampai automation sederhana. Fokusnya adalah membuat teknologi yang rapi, mudah dipakai, dan sesuai kebutuhan pengguna.
+
+<div align="center">
+
+[![CodeBoost Creative](https://img.shields.io/badge/CodeBoost%20Creative-codeboost.my.id-2563eb?style=for-the-badge&logo=google-chrome&logoColor=white)](https://codeboost.my.id)
+
+</div>
 
 ## Tech Stack
 
@@ -83,6 +103,8 @@ currently_learning:
 - IoT: Arduino, ESP32, relay, sensor, DFPlayer Mini, monitoring system, dan komunikasi serial
 
 ## Project yang Pernah Saya Buat
+
+Beberapa project di bawah ini sudah pernah saya kerjakan. Link demo dan repository akan saya lengkapi bertahap.
 
 - Sistem e-voting dengan verifikasi wajah
 - Sistem administrasi surat organisasi
@@ -134,10 +156,11 @@ currently_learning:
 
 <div align="center">
 
-[![Email](https://img.shields.io/badge/Email-Contact%20Me-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit%20Website-0f766e?style=for-the-badge&logo=google-chrome&logoColor=white)](#)
-[![Instagram](https://img.shields.io/badge/Instagram-Follow-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](#)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](#)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-Chat%20Langsung-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/6285608764149)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit%20Website-0f766e?style=for-the-badge&logo=google-chrome&logoColor=white)](https://porto.codeboost.my.id)
+[![Instagram](https://img.shields.io/badge/Instagram-@danzz_isnn-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/danzz_isnn)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Zidan%20Nafiil-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/zidan-nafiil-64213338a/)
+[![CodeBoost](https://img.shields.io/badge/CodeBoost-Creative-2563eb?style=for-the-badge&logo=google-chrome&logoColor=white)](https://codeboost.my.id)
 
 </div>
 
