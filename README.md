@@ -1,16 +1,70 @@
-## Hi there 👋
+# Hey there, I'm Zidan Naaf 👋
 
-<!--
-**ZidanNaaf/ZidanNaaf** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Welcome to my GitHub profile! I'm a passionate developer focused on building impactful solutions through clean code and innovative thinking.
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🚀 About Me
+
+- 💻 Developer with a passion for creating meaningful software
+- 🌱 Continuously learning and exploring new technologies
+- 🎯 Focused on writing scalable, maintainable code
+- 🤝 Open to collaboration and knowledge sharing
+
+---
+
+## 🛠️ Technical Skills
+
+- **Languages**: [Your languages here]
+- **Frameworks & Libraries**: [Your frameworks here]
+- **Tools & Platforms**: [Your tools here]
+- **Specializations**: [Your specializations here]
+
+---
+
+## 📌 Featured Projects
+
+### [Project Name](https://github.com/ZidanNaaf/project-name)
+Brief description of what this project does and why it's interesting.
+
+### [Project Name](https://github.com/ZidanNaaf/project-name)
+Brief description of what this project does and why it's interesting.
+
+### [Project Name](https://github.com/ZidanNaaf/project-name)
+Brief description of what this project does and why it's interesting.
+
+---
+
+## 📊 GitHub Stats
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ZidanNaaf&show_icons=true&theme=radical)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ZidanNaaf&layout=compact&theme=radical)
+
+---
+
+## 🌐 Let's Connect
+
+- 💼 [LinkedIn](#)
+- 🐦 [Twitter](#)
+- 📧 [Email](#)
+- 🌍 [Portfolio](#)
+
+---
+
+## 💡 What I'm Currently Working On
+
+- [Current project or focus area]
+- [Another area of focus]
+- [Learning goal or challenge]
+
+---
+
+## 📚 Latest Articles & Insights
+
+- [Article or blog post title](#)
+- [Another article or blog post](#)
+
+---
+
+**Thanks for visiting my profile! Feel free to explore my repositories and reach out if you'd like to collaborate.** ✨
