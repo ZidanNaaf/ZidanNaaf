@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://porto.codeboost.my.id/sitemap.xml
+Sitemap: https://www.zdnnaaf.my.id/sitemap.xml
