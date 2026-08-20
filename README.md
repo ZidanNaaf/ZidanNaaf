@@ -27,8 +27,8 @@ alias: Zidan
 role: Full Stack Web Developer, IoT Developer, Network Enthusiast
 education: Sistem Informasi, UIN Sunan Ampel Surabaya, 2026
 company: CodeBoost Creative
-website: https://codeboost.my.id
-portfolio: https://porto.codeboost.my.id
+website: https://codeboost.id
+portfolio: https://www.zdnnaaf.my.id
 location: Gresik, Jawa Timur, Indonesia
 focus:
   - Membuat aplikasi web yang berguna
