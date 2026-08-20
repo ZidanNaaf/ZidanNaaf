@@ -57,7 +57,7 @@ CodeBoost Creative adalah brand yang saya bangun untuk mengerjakan solusi digita
 
 <div align="center">
 
-[![CodeBoost Creative](https://img.shields.io/badge/CodeBoost%20Creative-codeboost.my.id-2563eb?style=for-the-badge&logo=google-chrome&logoColor=white)](https://codeboost.my.id)
+[![CodeBoost Creative](https://img.shields.io/badge/CodeBoost%20Creative-codeboost.id-2563eb?style=for-the-badge&logo=google-chrome&logoColor=white)](https://codeboost.id)
 
 </div>
 
@@ -155,10 +155,10 @@ Beberapa project di bawah ini sudah pernah saya kerjakan. Link demo dan reposito
 <div align="center">
 
 [![WhatsApp](https://img.shields.io/badge/WhatsApp-Chat%20Langsung-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/6285608764149)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit%20Website-0f766e?style=for-the-badge&logo=google-chrome&logoColor=white)](https://porto.codeboost.my.id)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit%20Website-0f766e?style=for-the-badge&logo=google-chrome&logoColor=white)](https://www.zdnnaaf.my.id)
 [![Instagram](https://img.shields.io/badge/Instagram-@danzz_isnn-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/danzz_isnn)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Zidan%20Nafiil-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/zidan-nafiil-64213338a/)
-[![CodeBoost](https://img.shields.io/badge/CodeBoost-Creative-2563eb?style=for-the-badge&logo=google-chrome&logoColor=white)](https://codeboost.my.id)
+[![CodeBoost](https://img.shields.io/badge/CodeBoost-Creative-2563eb?style=for-the-badge&logo=google-chrome&logoColor=white)](https://codeboost.id)
 
 </div>
 
