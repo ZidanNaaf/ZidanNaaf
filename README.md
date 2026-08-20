@@ -2,7 +2,7 @@
 
 ![Header](https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:0f766e,100:2563eb&height=180&section=header&text=Muhammad%20Zidan%20Nafi'il%20Halim&fontSize=34&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Full%20Stack%20Web%20Developer%20%7C%20IoT%20Developer%20%7C%20Network%20Enthusiast&descAlignY=58&descSize=16)
 
-<img src="https://porto.codeboost.my.id/foto.webp" width="150" alt="Foto Muhammad Zidan Nafi'il Halim" />
+<img src="https://www.zdnnaaf.my.id/foto.webp" width="150" alt="Foto Muhammad Zidan Nafi'il Halim" />
 
 ### Halo, saya Muhammad Zidan Nafi'il Halim
 
@@ -11,7 +11,7 @@ Mahasiswa Sistem Informasi UIN Sunan Ampel Surabaya angkatan 2026, developer, da
 [![Profile Views](https://komarev.com/ghpvc/?username=ZidanNaaf&label=Profile%20Views&color=0f766e&style=for-the-badge)](https://github.com/ZidanNaaf)
 [![Followers](https://img.shields.io/github/followers/ZidanNaaf?label=Followers&style=for-the-badge&color=2563eb&logo=github)](https://github.com/ZidanNaaf?tab=followers)
 [![Focus](https://img.shields.io/badge/Focus-Web%20%7C%20IoT%20%7C%20Networking-0f172a?style=for-the-badge)](#)
-[![Portfolio](https://img.shields.io/badge/Portfolio-porto.codeboost.my.id-0f766e?style=for-the-badge&logo=google-chrome&logoColor=white)](https://porto.codeboost.my.id)
+[![Portfolio](https://img.shields.io/badge/Portfolio-www.zdnnaaf.my.id-0f766e?style=for-the-badge&logo=google-chrome&logoColor=white)](https://www.zdnnaaf.my.id)
 
 </div>
 
