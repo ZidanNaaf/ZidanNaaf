@@ -1,0 +1,20 @@
+LMS System adalah aplikasi manajemen pembelajaran untuk bimbel, les privat, atau kelas belajar kecil-menengah. Sistem ini dibuat dengan CodeIgniter 4, Tailwind CSS, Vite, Vue, dan SweetAlert, dengan struktur yang dipisah rapi agar mudah dirawat.
+
+Fitur Utama
+
+FITUR:
+Dashboard		Jadwal terdekat, materi hari ini, dan ringkasan aktivitas sesuai role
+Auth			Login menggunakan email atau username, logout dengan konfirmasi, toggle show password
+Setup awal		Halaman /bos untuk membuat superadmin dan identitas sistem pada fresh install
+Identitas sistem	Nama aplikasi, logo, dan informasi sistem hanya bisa diubah superadmin
+User			Kelola admin, tutor, dan siswa
+Program			Kelola program belajar tanpa pembayaran
+Kelas			Tutor dapat membuat kelas dan memilih siswa yang masuk kelas
+Jadwal			Kelola jadwal kelas dan tampilkan agenda terdekat
+Materi			Materi aktif per hari, bisa dipakai di beberapa kelas, dilengkapi editor teks
+Viewer materi		Tampilan baca materi untuk siswa, lampiran bisa dibuka dari dalam sistem
+Lampiran		Preview PDF, Word, Excel, dan file pendukung lain untuk kebutuhan belajar
+Tugas			Tutor membuat tugas, siswa mengumpulkan jawaban, tutor memberi nilai
+Absensi			Catat dan edit kehadiran siswa
+Arsip			Data penting dapat diarsipkan dan dipulihkan
+SEO			Meta tag dasar, manifest, robots.txt, dan sitemap.xml

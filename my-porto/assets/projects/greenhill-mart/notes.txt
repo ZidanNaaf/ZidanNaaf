@@ -1,0 +1,11 @@
+GreenHill Mart adalah aplikasi marketplace lokal berbasis Laravel. Sistem ini mendukung transaksi multi-seller, QRIS sistem, QRIS merchant, wallet GreenSmartPay, chat buyer-seller, notifikasi web push, PWA, audit log, dan panel admin untuk operasional marketplace.
+
+
+Fitur utama Area Belanja	:Katalog produk, wishlist, cart database, checkout multi-seller
+Fitur utama Area Pembayaran	:Cash, QRIS sistem, QRIS merchant, GreenSmartPay
+Fitur utama Area Wallet		:Topup, tarik dana, mutasi, settlement seller
+Fitur utama Area Komunikasi	:Chat produk dan pesanan tanpa membuka nomor pribadi
+Fitur utama Area Admin		:User, seller approval, produk, promo, payment gateway, refund, audit log
+Fitur utama Area Aplikasi	:PWA, offline page, push notification, sitemap dinamis
+
+demo link: menyusul.

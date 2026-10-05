@@ -41,7 +41,7 @@
     <meta property="og:title" content="Muhammad Zidan Nafi'il Halim | Full Stack Web Developer & IoT Developer" />
     <meta
       property="og:description"
-      content="Portfolio Zidan Naaf, mahasiswa Sistem Informasi UIN Sunan Ampel Surabaya, developer dari Gresik yang membangun website, sistem informasi, IoT, networking, dan solusi digital bersama CodeBoost Creative."
+      content="Portfolio Zidan Naaf, mahasiswa Sistem Informasi UIN Sunan Ampel Surabaya, developer dari Gresik yang membangun website, sistem informasi, IoT, networking, dan solusi digital bersama CodeBoost Creative. Lengkap dengan sertifikat dan galeri project."
     />
     <meta property="og:url" content="https://www.zdnnaaf.my.id/" />
     <meta property="og:image" content="https://www.zdnnaaf.my.id/foto.webp" />
@@ -55,7 +55,7 @@
     <meta name="twitter:title" content="Muhammad Zidan Nafi'il Halim | Full Stack Web Developer & IoT Developer" />
     <meta
       name="twitter:description"
-      content="Portfolio Zidan Naaf, developer dari Gresik yang fokus pada web development, backend, IoT, networking, dan solusi digital."
+      content="Portfolio Zidan Naaf, developer dari Gresik yang fokus pada web development, backend, IoT, networking, dan solusi digital. Lengkap dengan sertifikat dan galeri project."
     />
     <meta name="twitter:image" content="https://www.zdnnaaf.my.id/foto.webp" />
     <meta name="twitter:image:alt" content="Foto Muhammad Zidan Nafi'il Halim" />
@@ -101,13 +101,48 @@
               "ESP32",
               "MikroTik",
               "Linux Server",
-              "Automation"
+              "Automation",
+              "Artificial Intelligence",
+              "Machine Learning",
+              "Computer Vision"
             ],
             "sameAs": [
               "https://github.com/ZidanNaaf",
               "https://instagram.com/danzz_isnn",
               "https://www.linkedin.com/in/zidan-nafiil-64213338a/",
               "https://codeboost.my.id/"
+            ],
+            "hasCredential": [
+              {
+                "@type": "EducationalOccupationalCredential",
+                "name": "Juara I - Olimpiade Bahasa Arab (OBA) ke-8 Tahun 2025",
+                "credentialCategory": "certificate",
+                "dateCreated": "2025-07-05",
+                "recognizedBy": {
+                  "@type": "Organization",
+                  "name": "Forum MGMP Bahasa Arab Se-Indonesia"
+                }
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "name": "Juara 3 - Lomba Kompetensi Siswa (LKS) SMK Tingkat Kabupaten Gresik, Bidang IT Network System Administration",
+                "credentialCategory": "certificate",
+                "dateCreated": "2025-02-19",
+                "recognizedBy": {
+                  "@type": "Organization",
+                  "name": "Cabang Dinas Pendidikan Wilayah Kabupaten Gresik"
+                }
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "name": "Juara II - Olimpiade Bahasa Arab (OBA) ke-7 Tahun 2024",
+                "credentialCategory": "certificate",
+                "dateCreated": "2024-08-24",
+                "recognizedBy": {
+                  "@type": "Organization",
+                  "name": "Forum MGMP Bahasa Arab Se-Indonesia"
+                }
+              }
             ]
           },
           {
@@ -163,40 +198,27 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
 
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
-
-      body {
-        overflow-x: hidden;
-      }
-
-      [v-cloak] {
-        display: none;
-      }
-
-      .glass {
-        background: rgba(255, 255, 255, 0.78);
-        backdrop-filter: blur(18px);
-      }
-
-      .dark .glass {
-        background: rgba(15, 23, 42, 0.78);
-      }
-
-      .section-pad {
-        padding-top: 7rem;
-        padding-bottom: 5rem;
-      }
-    </style>
+    <link rel="stylesheet" href="assets/css/site.css" />
   </head>
 
   <body class="bg-slate-50 font-sans text-slate-800 antialiased dark:bg-ink dark:text-slate-100">
-    
+    <div id="scroll-progress" aria-hidden="true"><div id="scroll-progress-bar"></div></div>
+    <div class="grain-overlay"></div>
+    <div id="blob-1" class="bg-blob"></div>
+    <div id="blob-2" class="bg-blob"></div>
+    <div id="blob-3" class="bg-blob"></div>
+    <div id="cursor-ring"></div>
+    <div id="cursor-dot"></div>
+    <div id="cursor-preview">
+      <div class="preview-card">
+        <img alt="" />
+        <div class="preview-caption"></div>
+      </div>
+    </div>
+
     <div id="app" v-cloak :class="{ dark: darkMode }">
-      <div class="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,rgba(37,99,235,0.16),transparent_34%),radial-gradient(circle_at_bottom_right,rgba(15,118,110,0.16),transparent_32%)] dark:bg-[radial-gradient(circle_at_top_left,rgba(37,99,235,0.22),transparent_34%),radial-gradient(circle_at_bottom_right,rgba(20,184,166,0.16),transparent_32%)]"></div>
 
       <header class="fixed left-1/2 top-4 z-50 w-[92vw] max-w-6xl -translate-x-1/2">
         <div class="glass rounded-2xl border border-white/70 px-4 py-3 shadow-soft dark:border-slate-700/70">
@@ -264,19 +286,25 @@
       </header>
 
       <main>
-        <section id="home" class="section-pad flex min-h-screen items-center">
-          <div class="mx-auto grid w-full max-w-6xl items-center gap-10 px-6 md:grid-cols-[1.05fr_0.95fr]">
+        <section id="home" class="section-pad relative flex min-h-screen items-center overflow-hidden">
+          <div class="pointer-events-none absolute inset-0 -z-[5] flex select-none items-center justify-center">
+            <span aria-hidden="true" class="whitespace-nowrap text-[20vw] font-extrabold leading-none text-slate-900/[0.035] dark:text-white/[0.045]">DEVELOPER</span>
+          </div>
+
+          <div class="mx-auto grid w-full max-w-6xl items-center gap-16 px-6 md:grid-cols-[1.05fr_0.95fr]">
             <div>
-              <p class="mb-4 inline-flex rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-semibold text-brand dark:border-blue-900 dark:bg-blue-950/60 dark:text-blue-300">
+              <p class="reveal mb-4 inline-flex rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-semibold text-brand dark:border-blue-900 dark:bg-blue-950/60 dark:text-blue-300">
                 Mahasiswa Sistem Informasi | Full Stack Web Developer
               </p>
-              <h1 class="max-w-3xl text-4xl font-extrabold leading-tight text-slate-950 sm:text-5xl lg:text-6xl dark:text-white">
-                Halo, saya Muhammad Zidan Nafi'il Halim.
+              <h1 class="reveal max-w-3xl text-5xl font-extrabold leading-[1.05] text-slate-950 sm:text-6xl lg:text-7xl dark:text-white" style="transition-delay: 0.06s">
+                Halo, saya
+                <span class="block bg-gradient-to-r from-brand via-blue-500 to-mint bg-clip-text text-transparent">Muhammad Zidan</span>
+                Nafi'il Halim.
               </h1>
-              <p class="mt-6 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg dark:text-slate-300">
+              <p class="reveal mt-6 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg dark:text-slate-300" style="transition-delay: 0.12s">
                 Saya developer dari Gresik yang senang membangun website, sistem informasi, IoT, dan solusi digital yang benar-benar bisa dipakai oleh organisasi, sekolah, komunitas, maupun bisnis kecil.
               </p>
-              <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+              <div class="reveal mt-8 flex flex-col gap-3 sm:flex-row" style="transition-delay: 0.18s">
                 <a href="#projects" class="rounded-xl bg-brand px-6 py-3 text-center font-semibold text-white shadow-lg shadow-blue-600/20 transition hover:-translate-y-0.5 hover:bg-blue-700">
                   Lihat Project
                 </a>
@@ -284,65 +312,100 @@
                   Chat WhatsApp
                 </a>
               </div>
+
+              <div class="reveal mt-12 flex flex-wrap items-center gap-x-8 gap-y-4 border-t border-slate-200/80 pt-6 dark:border-slate-800" style="transition-delay: 0.24s">
+                <div>
+                  <p class="text-2xl font-extrabold text-slate-950 dark:text-white">{{ projects.length }}+</p>
+                  <p class="text-xs font-medium uppercase tracking-wide text-slate-500 dark:text-slate-400">Project</p>
+                </div>
+                <div>
+                  <p class="text-2xl font-extrabold text-slate-950 dark:text-white">{{ certificates.length }}</p>
+                  <p class="text-xs font-medium uppercase tracking-wide text-slate-500 dark:text-slate-400">Sertifikat</p>
+                </div>
+                <div>
+                  <p class="text-2xl font-extrabold text-slate-950 dark:text-white">Founder</p>
+                  <p class="text-xs font-medium uppercase tracking-wide text-slate-500 dark:text-slate-400">CodeBoost Creative</p>
+                </div>
+              </div>
             </div>
 
-            <div class="relative">
-              <div class="absolute -inset-5 rounded-[2rem] bg-gradient-to-br from-blue-500/20 via-teal-400/20 to-transparent blur-2xl"></div>
-              <div class="relative overflow-hidden rounded-[2rem] border border-white/70 bg-white p-4 shadow-soft dark:border-slate-700 dark:bg-slate-900">
+            <div class="reveal relative" style="transition-delay: 0.1s">
+              <div class="absolute -inset-6 rounded-[2.5rem] bg-gradient-to-br from-blue-500/25 via-purple-400/20 to-teal-400/20 blur-3xl"></div>
+              <div class="relative rotate-2 overflow-hidden rounded-[2rem] border border-white/70 bg-white p-3 shadow-soft transition duration-500 hover:rotate-0 dark:border-slate-700 dark:bg-slate-900">
                 <img
                   :src="profileImage"
                   alt="Foto Muhammad Zidan Nafi'il Halim"
-                  class="h-[360px] w-full rounded-[1.5rem] object-cover"
+                  fetchpriority="high"
+                  class="h-[420px] w-full rounded-[1.5rem] object-cover"
                   @error="setProfileImage(fallbackImage)"
                 />
-                <div class="mt-4 grid gap-3 sm:grid-cols-2">
-                  <div class="rounded-2xl bg-slate-50 p-4 dark:bg-slate-800">
-                    <p class="text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">Lokasi</p>
-                    <p class="mt-1 font-semibold">Gresik, Jawa Timur</p>
-                  </div>
-                  <div class="rounded-2xl bg-slate-50 p-4 dark:bg-slate-800">
-                    <p class="text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">Founder</p>
-                    <p class="mt-1 font-semibold">CodeBoost Creative</p>
-                  </div>
+              </div>
+
+              <div class="glass-card absolute -bottom-8 -left-6 hidden -rotate-3 rounded-2xl px-5 py-3 shadow-soft sm:block">
+                <p class="text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">Lokasi</p>
+                <p class="mt-1 font-semibold text-slate-950 dark:text-white">Gresik, Jawa Timur</p>
+              </div>
+              <div class="glass-card absolute -right-4 -top-6 hidden rotate-3 rounded-2xl px-5 py-3 shadow-soft sm:block">
+                <p class="text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">Founder</p>
+                <p class="mt-1 font-semibold text-slate-950 dark:text-white">CodeBoost Creative</p>
+              </div>
+            </div>
+          </div>
+
+          <a
+            href="#about"
+            class="scroll-cue absolute bottom-8 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-1 text-xs font-medium text-slate-500 sm:flex dark:text-slate-400"
+          >
+            Scroll
+            <iconify-icon icon="solar:alt-arrow-down-linear" class="text-lg" aria-hidden="true"></iconify-icon>
+          </a>
+        </section>
+
+        <section id="about" class="section-pad relative overflow-hidden">
+          <div class="mx-auto max-w-6xl px-6">
+            <div class="grid gap-10 lg:grid-cols-[0.85fr_1.15fr]">
+              <div class="reveal lg:sticky lg:top-32 lg:self-start">
+                <span aria-hidden="true" class="text-6xl font-extrabold text-blue-300 dark:text-blue-800">02</span>
+                <p class="-mt-3 font-semibold text-brand">Tentang Saya</p>
+                <h2 class="mt-3 text-3xl font-bold leading-tight text-slate-950 sm:text-4xl dark:text-white">
+                  Saya suka membangun sistem yang dekat dengan kebutuhan nyata.
+                </h2>
+              </div>
+              <div class="space-y-5 text-slate-600 dark:text-slate-300">
+                <p class="reveal leading-8" style="transition-delay: 0.06s">
+                  Saat ini saya adalah mahasiswa Sistem Informasi di Universitas Islam Negeri Sunan Ampel Surabaya angkatan 2026. Saya banyak belajar dan mengerjakan project di bidang web development, backend, networking, server Linux, IoT, automation, dan teknologi audio.
+                </p>
+                <p class="reveal rounded-r-xl border-l-4 border-brand bg-blue-50/60 py-3 pl-5 leading-8 text-slate-700 dark:bg-blue-950/30 dark:text-slate-200" style="transition-delay: 0.12s">
+                  Saya juga membangun <span class="font-semibold text-brand">CodeBoost Creative</span> sebagai brand untuk mengembangkan layanan dan produk digital. Fokus saya sederhana: teknologi harus rapi secara teknis, mudah dipakai, dan menyelesaikan masalah pengguna.
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              <div
+                v-for="(item, index) in highlights"
+                :key="item.title"
+                class="reveal glass-card spotlight-card rounded-2xl border border-slate-200 p-6 shadow-sm dark:border-slate-800"
+                :style="{ transitionDelay: (index * 0.06) + 's' }"
+              >
+                <div class="grid h-11 w-11 place-items-center rounded-xl bg-blue-50 text-2xl text-brand dark:bg-blue-950/70 dark:text-blue-300">
+                  <iconify-icon :icon="item.icon" aria-hidden="true"></iconify-icon>
+                </div>
+                <div class="mt-4">
+                  <p class="text-sm font-semibold text-brand">{{ item.title }}</p>
+                  <p class="mt-2 text-sm leading-6 text-slate-600 dark:text-slate-300">{{ item.text }}</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section id="about" class="section-pad">
+        <section id="projects" class="section-pad relative overflow-hidden bg-white/70 dark:bg-slate-900/40">
           <div class="mx-auto max-w-6xl px-6">
-            <div class="grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
+            <div class="reveal flex flex-col justify-between gap-4 md:flex-row md:items-end">
               <div>
-                <p class="font-semibold text-brand">Tentang Saya</p>
-                <h2 class="mt-3 text-3xl font-bold text-slate-950 sm:text-4xl dark:text-white">
-                  Saya suka membangun sistem yang dekat dengan kebutuhan nyata.
-                </h2>
-              </div>
-              <div class="space-y-5 text-slate-600 dark:text-slate-300">
-                <p class="leading-8">
-                  Saat ini saya adalah mahasiswa Sistem Informasi di Universitas Islam Negeri Sunan Ampel Surabaya angkatan 2026. Saya banyak belajar dan mengerjakan project di bidang web development, backend, networking, server Linux, IoT, automation, dan teknologi audio.
-                </p>
-                <p class="leading-8">
-                  Saya juga membangun CodeBoost Creative sebagai brand untuk mengembangkan layanan dan produk digital. Fokus saya sederhana: teknologi harus rapi secara teknis, mudah dipakai, dan menyelesaikan masalah pengguna.
-                </p>
-              </div>
-            </div>
-
-            <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              <div v-for="item in highlights" :key="item.title" class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-800 dark:bg-slate-900">
-                <p class="text-sm font-semibold text-brand">{{ item.title }}</p>
-                <p class="mt-2 text-sm leading-6 text-slate-600 dark:text-slate-300">{{ item.text }}</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="projects" class="section-pad bg-white/70 dark:bg-slate-900/40">
-          <div class="mx-auto max-w-6xl px-6">
-            <div class="flex flex-col justify-between gap-4 md:flex-row md:items-end">
-              <div>
-                <p class="font-semibold text-brand">Project</p>
+                <span aria-hidden="true" class="text-6xl font-extrabold text-blue-300 dark:text-blue-800">03</span>
+                <p class="-mt-3 font-semibold text-brand">Project</p>
                 <h2 class="mt-3 text-3xl font-bold text-slate-950 sm:text-4xl dark:text-white">Beberapa hal yang pernah saya buat.</h2>
               </div>
               <p class="max-w-xl text-sm leading-6 text-slate-600 dark:text-slate-300">
@@ -350,27 +413,123 @@
               </p>
             </div>
 
-            <div class="mt-10 grid gap-5 md:grid-cols-3">
-              <article v-for="project in projects" :key="project.title" class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-soft dark:border-slate-800 dark:bg-slate-950">
-                <div class="mb-5 grid h-14 w-14 place-items-center rounded-2xl bg-blue-50 text-3xl text-brand dark:bg-blue-950/70 dark:text-blue-300">
-                  <iconify-icon :icon="project.icon" aria-hidden="true"></iconify-icon>
+            <div class="mt-10 space-y-5">
+              <article
+                v-if="projects[0]"
+                class="reveal group glass-card spotlight-card relative grid gap-8 overflow-hidden rounded-2xl border border-slate-200 p-6 shadow-sm transition hover:shadow-soft dark:border-slate-800 md:grid-cols-2 md:p-8"
+              >
+                <div class="flex flex-col justify-center">
+                  <div class="flex items-center justify-between">
+                    <span class="inline-flex w-fit items-center rounded-full bg-brand/10 px-3 py-1 text-xs font-bold uppercase tracking-widest text-brand">Featured Project</span>
+                    <span aria-hidden="true" class="card-number text-3xl font-extrabold leading-none text-blue-300 dark:text-blue-800">01</span>
+                  </div>
+                  <div class="mt-5 grid h-14 w-14 place-items-center rounded-2xl bg-blue-50 text-3xl text-brand dark:bg-blue-950/70 dark:text-blue-300">
+                    <iconify-icon :icon="projects[0].icon" aria-hidden="true"></iconify-icon>
+                  </div>
+                  <h3 class="mt-4 text-2xl font-bold text-slate-950 dark:text-white">{{ projects[0].title }}</h3>
+                  <p class="mt-3 text-sm leading-7 text-slate-600 dark:text-slate-300">{{ projects[0].description }}</p>
+                  <div class="mt-5 flex flex-wrap gap-2">
+                    <span v-for="tag in projects[0].tags" :key="tag" class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-600 dark:bg-slate-800 dark:text-slate-300">
+                      {{ tag }}
+                    </span>
+                  </div>
                 </div>
-                <h3 class="text-xl font-bold text-slate-950 dark:text-white">{{ project.title }}</h3>
-                <p class="mt-3 text-sm leading-7 text-slate-600 dark:text-slate-300">{{ project.description }}</p>
-                <div class="mt-5 flex flex-wrap gap-2">
-                  <span v-for="tag in project.tags" :key="tag" class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-600 dark:bg-slate-800 dark:text-slate-300">
-                    {{ tag }}
-                  </span>
+
+                <div class="grid grid-cols-2 gap-3">
+                  <a
+                    v-for="(photo, index) in projects[0].photos"
+                    :key="photo.caption"
+                    :href="photo.src || placeholderImage(projects[0], index)"
+                    class="glightbox group/thumb relative block overflow-hidden rounded-xl bg-gradient-to-br from-blue-500 to-teal-400"
+                    :class="index === 0 ? 'col-span-2 aspect-video' : 'aspect-square'"
+                    :data-gallery="'project-' + projects[0].title"
+                    :data-title="projects[0].title"
+                    :data-description="photo.caption"
+                    :data-cursor-preview="photo.src || placeholderImage(projects[0], index)"
+                    :data-cursor-caption="photo.caption"
+                    data-type="image"
+                  >
+                    <img
+                      :src="photo.src || placeholderImage(projects[0], index)"
+                      :alt="projects[0].title + ' - ' + photo.caption"
+                      loading="lazy"
+                      class="h-full w-full object-cover opacity-90 transition group-hover/thumb:scale-105 group-hover/thumb:opacity-100"
+                      @error="$event.target.src = placeholderImage(projects[0], index)"
+                    />
+                    <span class="absolute inset-0 grid place-items-center bg-black/10 text-white opacity-0 transition group-hover/thumb:opacity-100">
+                      <iconify-icon icon="solar:eye-bold" class="text-xl" aria-hidden="true"></iconify-icon>
+                    </span>
+                  </a>
                 </div>
               </article>
+
+              <div class="grid gap-5 md:grid-cols-2">
+                <article
+                  v-for="(project, i) in projects.slice(1, 3)"
+                  :key="project.title"
+                  class="reveal group glass-card spotlight-card relative overflow-hidden rounded-2xl border border-slate-200 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-soft dark:border-slate-800"
+                  :style="{ transitionDelay: (i * 0.08) + 's' }"
+                >
+                  <div class="mb-5 flex items-start justify-between">
+                    <div class="grid h-14 w-14 place-items-center rounded-2xl bg-blue-50 text-3xl text-brand dark:bg-blue-950/70 dark:text-blue-300">
+                      <iconify-icon :icon="project.icon" aria-hidden="true"></iconify-icon>
+                    </div>
+                    <span aria-hidden="true" class="card-number text-3xl font-extrabold leading-none text-blue-300 dark:text-blue-800">{{ String(i + 2).padStart(2, '0') }}</span>
+                  </div>
+                  <h3 class="text-xl font-bold text-slate-950 dark:text-white">{{ project.title }}</h3>
+                  <p class="mt-3 text-sm leading-7 text-slate-600 dark:text-slate-300">{{ project.description }}</p>
+                  <div class="mt-5 flex flex-wrap gap-2">
+                    <span v-for="tag in project.tags" :key="tag" class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-600 dark:bg-slate-800 dark:text-slate-300">
+                      {{ tag }}
+                    </span>
+                  </div>
+
+                  <div class="mt-5 grid grid-cols-3 gap-2">
+                    <a
+                      v-for="(photo, index) in project.photos"
+                      :key="photo.caption"
+                      :href="photo.src || placeholderImage(project, index)"
+                      class="glightbox group/thumb relative block aspect-square overflow-hidden rounded-xl bg-gradient-to-br from-blue-500 to-teal-400"
+                      :data-gallery="'project-' + project.title"
+                      :data-title="project.title"
+                      :data-description="photo.caption"
+                      :data-cursor-preview="photo.src || placeholderImage(project, index)"
+                      :data-cursor-caption="photo.caption"
+                      data-type="image"
+                    >
+                      <img
+                        :src="photo.src || placeholderImage(project, index)"
+                        :alt="project.title + ' - ' + photo.caption"
+                        loading="lazy"
+                        class="h-full w-full object-cover opacity-90 transition group-hover/thumb:scale-105 group-hover/thumb:opacity-100"
+                        @error="$event.target.src = placeholderImage(project, index)"
+                      />
+                      <span class="absolute inset-0 grid place-items-center bg-black/10 text-white opacity-0 transition group-hover/thumb:opacity-100">
+                        <iconify-icon icon="solar:eye-bold" class="text-xl" aria-hidden="true"></iconify-icon>
+                      </span>
+                    </a>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <div class="reveal mt-10 text-center">
+              <a
+                href="projects.html"
+                class="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-6 py-3 font-semibold text-slate-800 transition hover:-translate-y-0.5 hover:border-brand hover:text-brand dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100"
+              >
+                Lihat Lebih Banyak Project
+                <iconify-icon icon="solar:arrow-right-linear" aria-hidden="true"></iconify-icon>
+              </a>
             </div>
           </div>
         </section>
 
-        <section id="skills" class="section-pad">
+        <section id="skills" class="section-pad relative overflow-hidden">
           <div class="mx-auto max-w-6xl px-6">
-            <div class="max-w-3xl">
-              <p class="font-semibold text-brand">Tech Stack</p>
+            <div class="reveal max-w-3xl">
+              <span aria-hidden="true" class="text-6xl font-extrabold text-blue-300 dark:text-blue-800">04</span>
+              <p class="-mt-3 font-semibold text-brand">Tech Stack</p>
               <h2 class="mt-3 text-3xl font-bold text-slate-950 sm:text-4xl dark:text-white">Tools dan bidang yang sering saya pakai.</h2>
               <p class="mt-4 leading-8 text-slate-600 dark:text-slate-300">
                 Saya tidak hanya mengerjakan tampilan, tapi juga backend, database, deployment, jaringan, dan perangkat IoT.
@@ -378,14 +537,125 @@
             </div>
 
             <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              <div v-for="group in skillGroups" :key="group.title" class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-800 dark:bg-slate-900">
-                <h3 class="font-bold text-slate-950 dark:text-white">{{ group.title }}</h3>
+              <div
+                v-for="(group, index) in skillGroups"
+                :key="group.title"
+                class="reveal glass-card spotlight-card rounded-2xl border border-slate-200 p-5 shadow-sm dark:border-slate-800"
+                :style="{ transitionDelay: (index * 0.06) + 's' }"
+              >
+                <div class="flex items-center gap-3">
+                  <div class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-blue-50 text-xl text-brand dark:bg-blue-950/70 dark:text-blue-300">
+                    <iconify-icon :icon="group.icon" aria-hidden="true"></iconify-icon>
+                  </div>
+                  <h3 class="font-bold text-slate-950 dark:text-white">{{ group.title }}</h3>
+                </div>
                 <div class="mt-4 flex flex-wrap gap-2">
                   <span v-for="skill in group.items" :key="skill" class="rounded-full bg-slate-100 px-3 py-1.5 text-sm font-medium text-slate-700 dark:bg-slate-800 dark:text-slate-200">
                     {{ skill }}
                   </span>
                 </div>
               </div>
+            </div>
+
+            <div class="reveal glass-card spotlight-card mt-5 rounded-2xl border border-dashed border-brand/40 p-5 shadow-sm dark:border-blue-400/30">
+              <div class="flex flex-wrap items-center gap-3">
+                <div class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-mint/10 text-xl text-mint dark:bg-teal-400/10 dark:text-teal-300">
+                  <iconify-icon :icon="learningNow.icon" aria-hidden="true"></iconify-icon>
+                </div>
+                <h3 class="font-bold text-slate-950 dark:text-white">{{ learningNow.title }}</h3>
+                <span class="inline-flex items-center gap-1.5 rounded-full bg-mint/10 px-3 py-1 text-xs font-semibold text-mint dark:bg-teal-400/10 dark:text-teal-300">
+                  <span class="relative flex h-1.5 w-1.5">
+                    <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-mint opacity-75 dark:bg-teal-300"></span>
+                    <span class="relative inline-flex h-1.5 w-1.5 rounded-full bg-mint dark:bg-teal-300"></span>
+                  </span>
+                  Sedang Dipelajari
+                </span>
+              </div>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span v-for="skill in learningNow.items" :key="skill" class="rounded-full bg-mint/10 px-3 py-1.5 text-sm font-medium text-mint dark:bg-teal-400/10 dark:text-teal-300">
+                  {{ skill }}
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="certificates" class="section-pad relative overflow-hidden bg-white/70 dark:bg-slate-900/40">
+          <div class="mx-auto max-w-6xl px-6">
+            <div class="reveal max-w-3xl">
+              <span aria-hidden="true" class="text-6xl font-extrabold text-blue-300 dark:text-blue-800">05</span>
+              <p class="-mt-3 font-semibold text-brand">Sertifikat & Achievement</p>
+              <h2 class="mt-3 text-3xl font-bold text-slate-950 sm:text-4xl dark:text-white">Beberapa sertifikat dan pencapaian yang pernah saya dapatkan.</h2>
+            </div>
+
+            <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              <article
+                v-for="(cert, index) in certificates.slice(0, 3)"
+                :key="cert.title"
+                class="reveal group glass-card spotlight-card overflow-hidden rounded-2xl border border-slate-200 shadow-sm transition hover:-translate-y-1 hover:shadow-soft dark:border-slate-800"
+                :style="{ transitionDelay: (index * 0.08) + 's' }"
+              >
+                <a
+                  :href="cert.file || '#'"
+                  target="_blank"
+                  rel="noopener"
+                  class="relative block aspect-video overflow-hidden bg-slate-100 dark:bg-slate-800"
+                  :class="!cert.file ? 'pointer-events-none' : ''"
+                >
+                  <img
+                    v-if="isImageFile(cert.file)"
+                    :src="cert.file"
+                    :alt="cert.title"
+                    loading="lazy"
+                    class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                  />
+                  <div v-else class="grid h-full w-full place-items-center bg-gradient-to-br from-blue-500 to-teal-400 text-4xl text-white">
+                    <iconify-icon icon="solar:diploma-verified-bold-duotone" aria-hidden="true"></iconify-icon>
+                  </div>
+                  <span
+                    v-if="cert.rank"
+                    class="absolute left-3 top-3 inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-bold shadow-sm"
+                    :class="rankMeta(cert.rank).classes"
+                  >
+                    <iconify-icon icon="solar:cup-star-bold" aria-hidden="true"></iconify-icon>
+                    {{ rankMeta(cert.rank).label }}
+                  </span>
+                  <span class="absolute inset-0 grid place-items-center bg-black/0 text-white opacity-0 transition group-hover:bg-black/20 group-hover:opacity-100">
+                    <iconify-icon icon="solar:eye-bold" class="text-2xl" aria-hidden="true"></iconify-icon>
+                  </span>
+                </a>
+
+                <div class="p-6">
+                  <h3 class="text-lg font-bold text-slate-950 dark:text-white">{{ cert.title }}</h3>
+                  <p class="mt-1 text-sm font-medium text-slate-500 dark:text-slate-400">{{ cert.issuer }}</p>
+                  <p class="mt-1 text-xs text-slate-400 dark:text-slate-500">{{ cert.date }}</p>
+                  <div class="mt-4 flex flex-wrap gap-2">
+                    <span v-for="tag in cert.tags" :key="tag" class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-600 dark:bg-slate-800 dark:text-slate-300">
+                      {{ tag }}
+                    </span>
+                  </div>
+                  <a
+                    v-if="cert.file"
+                    :href="cert.file"
+                    target="_blank"
+                    rel="noopener"
+                    class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand hover:underline"
+                  >
+                    Lihat Sertifikat
+                    <iconify-icon icon="solar:arrow-right-up-linear" aria-hidden="true"></iconify-icon>
+                  </a>
+                </div>
+              </article>
+            </div>
+
+            <div class="reveal mt-10 text-center">
+              <a
+                href="certificates.html"
+                class="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-6 py-3 font-semibold text-slate-800 transition hover:-translate-y-0.5 hover:border-brand hover:text-brand dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100"
+              >
+                Lihat Lebih Banyak Sertifikat
+                <iconify-icon icon="solar:arrow-right-linear" aria-hidden="true"></iconify-icon>
+              </a>
             </div>
           </div>
         </section>
@@ -418,6 +688,8 @@
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
     <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="assets/js/site-data.js"></script>
     <script>
       const { createApp } = Vue;
 
@@ -440,75 +712,70 @@
               { id: "about", label: "About" },
               { id: "projects", label: "Projects" },
               { id: "skills", label: "Tech Stack" },
+              { id: "certificates", label: "Certificates" },
               { id: "contact", label: "Contact" },
             ],
             highlights: [
               {
+                icon: "solar:square-academic-cap-bold-duotone",
                 title: "Pendidikan",
                 text: "Mahasiswa Sistem Informasi UIN Sunan Ampel Surabaya angkatan 2026.",
               },
               {
+                icon: "solar:map-point-bold-duotone",
                 title: "Lokasi",
                 text: "Berbasis di Gresik, Jawa Timur, Indonesia.",
               },
               {
+                icon: "solar:target-bold-duotone",
                 title: "Fokus",
                 text: "Web application, backend system, IoT, networking, server, dan automation.",
               },
               {
+                icon: "solar:widget-5-bold-duotone",
                 title: "Brand",
                 text: "Founder CodeBoost Creative untuk layanan dan produk digital.",
               },
             ],
-            projects: [
-              {
-                icon: "solar:vote-bold-duotone",
-                title: "E-Voting Wajah",
-                description:
-                  "Sistem pemilihan digital dengan verifikasi wajah untuk membantu proses voting menjadi lebih tertib dan aman.",
-                tags: ["Web", "AI Vision", "Database"],
-              },
-              {
-                icon: "solar:document-add-bold-duotone",
-                title: "Sistem Administrasi Organisasi",
-                description:
-                  "Dashboard organisasi untuk surat, kas, data anggota, QR generator, dan kebutuhan administrasi harian.",
-                tags: ["PHP", "MySQL", "Dashboard"],
-              },
-              {
-                icon: "solar:cpu-bolt-bold-duotone",
-                title: "Monitoring Berbasis IoT",
-                description:
-                  "Sistem monitoring tanah dan perangkat berbasis Arduino/ESP32 dengan sensor, dashboard, dan automation.",
-                tags: ["ESP32", "Arduino", "Sensor"],
-              },
-            ],
+            projects: window.SITE_PROJECTS,
+            certificates: window.SITE_CERTIFICATES,
             skillGroups: [
               {
+                icon: "solar:code-square-bold-duotone",
                 title: "Web Development",
                 items: ["HTML", "CSS", "PHP", "CodeIgniter 4", "Laravel", "Vue.js", "React.js", "Next.js", "Tailwind CSS", "Bootstrap"],
               },
               {
+                icon: "solar:database-bold-duotone",
                 title: "Backend & Database",
                 items: ["REST API", "MVC", "Authentication", "MySQL", "MariaDB", "PDF/QR Generator"],
               },
               {
+                icon: "solar:server-square-bold-duotone",
                 title: "Server & Networking",
                 items: ["Linux Server", "Apache", "Nginx", "VPS", "MikroTik", "VLAN", "PPPoE", "Firewall", "IPv6", "NAT", "Mangle"],
               },
               {
+                icon: "solar:cpu-bolt-bold-duotone",
                 title: "IoT & Embedded",
                 items: ["Arduino", "ESP32", "Sensor", "Relay", "DFPlayer Mini", "Serial Communication"],
               },
               {
-                title: "Currently Learning",
-                items: ["Docker", "DevOps", "Computer Vision", "High Availability", "Advanced Routing"],
+                icon: "solar:magic-stick-3-bold-duotone",
+                title: "AI & Data",
+                items: ["AI/ML", "Computer Vision", "Data Analysis"],
               },
               {
+                icon: "solar:widget-2-bold-duotone",
                 title: "Tools",
                 items: ["Git", "GitHub", "VS Code", "XAMPP", "Laragon", "FlyEnv", "Linux", "AI Tools"],
               },
             ],
+            learningNow: {
+              icon: "solar:rocket-2-bold-duotone",
+              title: "Currently Learning",
+              items: ["Docker", "DevOps", "High Availability", "Advanced Routing"],
+            },
             contacts: [
               { label: "WhatsApp", href: "https://wa.me/6285608764149", icon: "logos:whatsapp-icon" },
               { label: "Portfolio", href: "https://www.zdnnaaf.my.id/", icon: "solar:global-bold-duotone" },
@@ -521,6 +788,11 @@
         mounted() {
           this.darkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
           this.resolveProfileImage();
+          this.$nextTick(() => {
+            if (window.GLightbox) {
+              GLightbox({ selector: ".glightbox", touchNavigation: true, loop: false });
+            }
+          });
         },
         watch: {
           darkMode(value) {
@@ -533,6 +805,12 @@
           },
           closeMenu() {
             this.mobileOpen = false;
+          },
+          isImageFile(file) {
+            return window.SITE_HELPERS.isImageFile(file);
+          },
+          rankMeta(rank) {
+            return window.SITE_HELPERS.rankMeta(rank);
           },
           resolveProfileImage(index = 0) {
             const candidate = this.profileImageCandidates[index];
@@ -557,8 +835,12 @@
               favicon.href = url;
             }
           },
+          placeholderImage(project, index) {
+            return window.SITE_HELPERS.placeholderImage(project, index);
+          },
         },
       }).mount("#app");
     </script>
+    <script src="assets/js/site-interactions.js"></script>
   <script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a2341cc6a8fbc261',t:'MTc4NTQxMTg3Ng=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a23421130c84c261',t:'MTc4NTQxMjA1Mg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a2438cf33a0eb841',t:'MTc4NTU3Mzc1Nw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a2438f778e02b841',t:'MTc4NTU3Mzg2MQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a259efcf3e0a5fdf',t:'MTc4NTgwODQ5Mw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>

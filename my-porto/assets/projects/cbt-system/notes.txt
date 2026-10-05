@@ -1,0 +1,38 @@
+Platform CBT, Bank Soal Premium, Pembayaran, Voucher, dan Pembahasan Soal berbasis CodeIgniter 4.
+
+Untuk Siapa?
+Sekolah, bimbel, lembaga belajar, admin bank soal, dan penyelenggara ujian berbasis komputer.
+
+Fitur Inti
+CBT, paket gratis/premium, pembahasan, pembayaran, voucher, import Excel, watermark, dan laporan hasil.
+
+Role Sistem
+superadmin, admin, pengawas, dan siswa.
+
+
+FITUR LENGKAP
+Authentication
+Login email, Register, Forgot/Reset Password, Google OAuth
+
+Dashboard
+Layout role terpisah, sidebar responsif, dark mode, SweetAlert global
+
+Paket Soal
+Gratis, premium, donation, jadwal paket, preview limit, SEO detail paket
+
+Bank Soal
+Pilihan ganda, pilihan ganda kompleks, benar/salah, menjodohkan, LaTeX MathJax
+
+CBT Engine
+Timer, navigasi soal Vue, autosave, auto submit, keamanan tab/focus/fullscreen
+
+Pembayaran
+Abstraction gateway, invoice, riwayat pembelian, akses paket/pembahasan
+
+Voucher & Kupon
+Target paket/pembahasan, masa aktif, limit total/per user, invoice transparan
+
+Admin Tools
+Import soal Excel, rekap hasil, filter laporan, pengaturan sistem
+
+link demo menyusul
