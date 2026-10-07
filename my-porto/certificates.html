@@ -24,7 +24,7 @@
 
     <title>Semua Sertifikat | Muhammad Zidan Nafi'il Halim</title>
     <link rel="canonical" href="https://www.zdnnaaf.my.id/certificates.html" />
-    <link id="dynamic-favicon" rel="icon" href="https://www.zdnnaaf.my.id/foto.webp" />
+    <link id="dynamic-favicon" rel="icon" type="image/webp" href="https://www.zdnnaaf.my.id/foto.webp" />
     <link rel="apple-touch-icon" href="https://www.zdnnaaf.my.id/foto.webp" />
     <link rel="sitemap" type="application/xml" href="https://www.zdnnaaf.my.id/sitemap.xml" />
 
@@ -38,6 +38,9 @@
     />
     <meta property="og:url" content="https://www.zdnnaaf.my.id/certificates.html" />
     <meta property="og:image" content="https://www.zdnnaaf.my.id/foto.webp" />
+    <meta property="og:image:secure_url" content="https://www.zdnnaaf.my.id/foto.webp" />
+    <meta property="og:image:type" content="image/webp" />
+    <meta property="og:image:alt" content="Foto Muhammad Zidan Nafi'il Halim" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Semua Sertifikat | Muhammad Zidan Nafi'il Halim" />
     <meta
@@ -45,14 +48,29 @@
       content="Kumpulan lengkap sertifikat dan pencapaian Muhammad Zidan Nafi'il Halim."
     />
     <meta name="twitter:image" content="https://www.zdnnaaf.my.id/foto.webp" />
+    <meta name="twitter:image:alt" content="Foto Muhammad Zidan Nafi'il Halim" />
 
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Beranda", "item": "https://www.zdnnaaf.my.id/" },
-          { "@type": "ListItem", "position": 2, "name": "Semua Sertifikat", "item": "https://www.zdnnaaf.my.id/certificates.html" }
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://www.zdnnaaf.my.id/certificates.html#page",
+            "url": "https://www.zdnnaaf.my.id/certificates.html",
+            "name": "Semua Sertifikat | Muhammad Zidan Nafi'il Halim",
+            "inLanguage": "id-ID",
+            "about": { "@id": "https://www.zdnnaaf.my.id/#person" },
+            "breadcrumb": { "@id": "https://www.zdnnaaf.my.id/certificates.html#breadcrumb" }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://www.zdnnaaf.my.id/certificates.html#breadcrumb",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Beranda", "item": "https://www.zdnnaaf.my.id/" },
+              { "@type": "ListItem", "position": 2, "name": "Semua Sertifikat", "item": "https://www.zdnnaaf.my.id/certificates.html" }
+            ]
+          }
         ]
       }
     </script>
@@ -96,9 +114,9 @@
     <div id="blob-1" class="bg-blob"></div>
     <div id="blob-2" class="bg-blob"></div>
     <div id="blob-3" class="bg-blob"></div>
-    <div id="cursor-ring"></div>
-    <div id="cursor-dot"></div>
-    <div id="cursor-preview">
+    <div id="cursor-ring" aria-hidden="true"></div>
+    <div id="cursor-dot" aria-hidden="true"></div>
+    <div id="cursor-preview" aria-hidden="true">
       <div class="preview-card">
         <img alt="" />
         <div class="preview-caption"></div>
@@ -232,16 +250,28 @@
                       {{ tag }}
                     </span>
                   </div>
-                  <a
-                    v-if="cert.file"
-                    :href="cert.file"
-                    target="_blank"
-                    rel="noopener"
-                    class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand hover:underline"
-                  >
-                    Lihat Sertifikat
-                    <iconify-icon icon="solar:arrow-right-up-linear" aria-hidden="true"></iconify-icon>
-                  </a>
+                  <div class="mt-4 flex flex-wrap gap-4">
+                    <a
+                      v-if="cert.file"
+                      :href="cert.file"
+                      target="_blank"
+                      rel="noopener"
+                      class="inline-flex items-center gap-1.5 text-sm font-semibold text-brand hover:underline"
+                    >
+                      Lihat Sertifikat
+                      <iconify-icon icon="solar:arrow-right-up-linear" aria-hidden="true"></iconify-icon>
+                    </a>
+                    <a
+                      v-if="cert.pdf"
+                      :href="cert.pdf"
+                      target="_blank"
+                      rel="noopener"
+                      class="inline-flex items-center gap-1.5 text-sm font-semibold text-slate-500 hover:underline dark:text-slate-400"
+                    >
+                      Unduh PDF
+                      <iconify-icon icon="solar:download-linear" aria-hidden="true"></iconify-icon>
+                    </a>
+                  </div>
                 </div>
               </article>
             </div>
@@ -286,14 +316,14 @@
           return {
             darkMode: false,
             mobileOpen: false,
-            profileImage: "https://porto.codeboost.my.id/foto.webp",
+            profileImage: "https://www.zdnnaaf.my.id/foto.webp",
             profileImageCandidates: [
-              "https://porto.codeboost.my.id/foto.webp",
-              "https://porto.codeboost.my.id/foto.png",
-              "https://porto.codeboost.my.id/foto.jpg",
-              "https://porto.codeboost.my.id/foto.jpeg",
+              "https://www.zdnnaaf.my.id/foto.webp",
+              "https://www.zdnnaaf.my.id/foto.png",
+              "https://www.zdnnaaf.my.id/foto.jpg",
+              "https://www.zdnnaaf.my.id/foto.jpeg",
             ],
-            fallbackImage: "https://porto.codeboost.my.id/foto.webp",
+            fallbackImage: "https://www.zdnnaaf.my.id/foto.webp",
             navItems: [
               { id: "home", label: "Home", href: "index.html#home" },
               { id: "about", label: "About", href: "index.html#about" },

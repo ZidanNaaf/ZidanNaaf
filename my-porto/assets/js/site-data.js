@@ -3,18 +3,6 @@
 
 window.SITE_PROJECTS = [
   {
-    icon: "solar:clipboard-list-bold-duotone",
-    title: "CBT System",
-    description:
-      "Platform Computer Based Test dengan bank soal premium, pembayaran, voucher, dan pembahasan soal berbasis CodeIgniter 4 — untuk sekolah, bimbel, dan penyelenggara ujian.",
-    tags: ["CodeIgniter 4", "Vue.js", "MySQL", "Payment Gateway"],
-    photos: [
-      { src: "assets/projects/cbt-system/landing-page.png", caption: "Landing page" },
-      { src: "assets/projects/cbt-system/dashboard-admin.png", caption: "Dashboard admin" },
-      { src: "assets/projects/cbt-system/lock-pelanggaran.png", caption: "Lock pelanggaran saat ujian" },
-    ],
-  },
-  {
     icon: "solar:cart-large-bold-duotone",
     title: "GreenHill Mart",
     description:
@@ -27,14 +15,15 @@ window.SITE_PROJECTS = [
     ],
   },
   {
-    icon: "solar:book-bold-duotone",
-    title: "LMS System",
+    icon: "solar:clipboard-list-bold-duotone",
+    title: "CBT System",
     description:
-      "Aplikasi manajemen pembelajaran untuk bimbel dan les privat — jadwal, materi, tugas, dan absensi, dibangun dengan CodeIgniter 4, Tailwind CSS, Vite, dan Vue.",
-    tags: ["CodeIgniter 4", "Vue.js", "Tailwind CSS", "Vite"],
+      "Platform Computer Based Test dengan bank soal premium, pembayaran, voucher, dan pembahasan soal berbasis CodeIgniter 4 — untuk sekolah, bimbel, dan penyelenggara ujian.",
+    tags: ["CodeIgniter 4", "Vue.js", "MySQL", "Payment Gateway"],
     photos: [
-      { src: "assets/projects/lms-system/landing-page-login.png", caption: "Halaman login" },
-      { src: "assets/projects/lms-system/dashboard-admin.png", caption: "Dashboard admin" },
+      { src: "assets/projects/cbt-system/landing-page.png", caption: "Landing page" },
+      { src: "assets/projects/cbt-system/dashboard-admin.png", caption: "Dashboard admin" },
+      { src: "assets/projects/cbt-system/lock-pelanggaran.png", caption: "Lock pelanggaran saat ujian" },
     ],
   },
   {
@@ -55,6 +44,121 @@ window.SITE_PROJECTS = [
       { src: "assets/projects/e-voting/detail-suara-pemilih.jpg", caption: "Detail suara pemilih" },
     ],
   },
+  {
+    icon: "solar:book-bold-duotone",
+    title: "LMS System",
+    description:
+      "Aplikasi manajemen pembelajaran untuk bimbel dan les privat — jadwal, materi, tugas, dan absensi, dibangun dengan CodeIgniter 4, Tailwind CSS, Vite, dan Vue.",
+    tags: ["CodeIgniter 4", "Vue.js", "Tailwind CSS", "Vite"],
+    photos: [
+      { src: "assets/projects/lms-system/landing-page-login.png", caption: "Halaman login" },
+      { src: "assets/projects/lms-system/dashboard-admin.png", caption: "Dashboard admin" },
+    ],
+  },
+  {
+    icon: "solar:letter-bold-duotone",
+    title: "Administrasi Surat Organisasi",
+    description:
+      "Sistem pengelolaan surat masuk dan keluar organisasi — penomoran otomatis, disposisi, dan arsip digital agar tertib administrasi.",
+    tags: ["PHP", "MySQL", "Admin Panel"],
+    photos: [],
+  },
+  {
+    icon: "solar:wallet-money-bold-duotone",
+    title: "Dashboard Organisasi & Kas",
+    description:
+      "Dashboard kas dan kegiatan organisasi — catat pemasukan, pengeluaran, dan laporan keuangan secara transparan.",
+    tags: ["PHP", "MySQL", "Dashboard"],
+    photos: [],
+  },
+  {
+    icon: "solar:square-academic-cap-bold-duotone",
+    title: "Website Organisasi Sekolah",
+    description:
+      "Website profil organisasi sekolah — informasi kegiatan, galeri, struktur pengurus, dan kontak resmi.",
+    tags: ["Landing Page", "SEO", "Responsive"],
+    photos: [],
+  },
+  {
+    icon: "solar:code-square-bold-duotone",
+    title: "Website CodeBoost Creative",
+    description:
+      "Landing page studio CodeBoost Creative — layanan jasa website, sistem custom, dan solusi digital dari Gresik.",
+    tags: ["Landing Page", "Branding", "SEO"],
+    photos: [],
+  },
+  {
+    icon: "solar:user-id-bold-duotone",
+    title: "Website Portofolio Pribadi",
+    description:
+      "Website portofolio personal — profil, daftar project, tech stack, sertifikat, dan kontak untuk kolaborasi.",
+    tags: ["Portfolio", "Vue.js", "Tailwind CSS"],
+    photos: [],
+  },
+  {
+    icon: "solar:qr-code-bold-duotone",
+    title: "Sistem QR Generator",
+    description:
+      "Generator kode QR untuk link, teks, dan kebutuhan operasional — cepat, praktis, dan bisa diunduh sebagai gambar.",
+    tags: ["Tools", "QR Code", "Web App"],
+    photos: [],
+  },
+  {
+    icon: "solar:earth-bold-duotone",
+    title: "Monitoring Tanah IoT",
+    description:
+      "Prototype monitoring kondisi tanah berbasis IoT — sensor terhubung ke dashboard web untuk pantau data secara berkala.",
+    tags: ["ESP32", "Sensor", "IoT"],
+    photos: [],
+  },
+  {
+    icon: "solar:mixer-bold-duotone",
+    title: "Digital Mixer ESP32",
+    description:
+      "Prototype digital mixer berbasis ESP32 — kontrol audio sederhana yang terhubung dengan perangkat embedded.",
+    tags: ["ESP32", "Audio", "Embedded"],
+    photos: [],
+  },
+  {
+    icon: "solar:bill-list-bold-duotone",
+    title: "Sistem Invoice Online",
+    description:
+      "Pembuatan dan pengelolaan invoice online — data pelanggan, rincian tagihan, dan status pembayaran yang rapi.",
+    tags: ["PHP", "MySQL", "Invoice"],
+    photos: [],
+  },
+  {
+    icon: "solar:wifi-router-bold-duotone",
+    title: "Sistem Billing ISP",
+    description:
+      "Sistem penagihan layanan internet — data pelanggan, paket langganan, dan pencatatan pembayaran untuk operasional ISP/RT-RW Net.",
+    tags: ["PHP", "MySQL", "Billing"],
+    photos: [],
+  },
+  {
+    icon: "solar:link-bold-duotone",
+    title: "URL Shortener",
+    description:
+      "Pemendek tautan sederhana — ubah link panjang jadi pendek agar mudah dibagikan dan dilacak.",
+    tags: ["Tools", "Web App", "PHP"],
+    photos: [],
+  },
+  {
+    icon: "solar:upload-bold-duotone",
+    title: "Sistem Upload Lomba",
+    description:
+      "Portal pengumpulan karya lomba — peserta mengunggah berkas, panitia memverifikasi dan mengelola data dalam satu dashboard.",
+    tags: ["PHP", "MySQL", "File Upload"],
+    photos: [],
+  },
+  {
+    icon: "solar:face-scan-square-bold-duotone",
+    title: "Sistem Absensi Wajah",
+    description:
+      "Prototype absensi berbasis pengenalan wajah — pencatatan kehadiran otomatis tanpa kartu atau sidik jari.",
+    tags: ["Face Recognition", "Python", "Web Dashboard"],
+    photos: [],
+  },
 ];
 
 window.SITE_CERTIFICATES = [
@@ -64,6 +168,7 @@ window.SITE_CERTIFICATES = [
     date: "5 Juli 2025",
     tags: ["Tingkat Kabupaten/Kota", "Bahasa Arab"],
     file: "assets/certificates/oba-8-2025-juara-1.png",
+    pdf: "assets/certificates/oba-8-2025-juara-1.pdf",
     rank: 1,
   },
   {
@@ -72,6 +177,7 @@ window.SITE_CERTIFICATES = [
     date: "24 Agustus 2024",
     tags: ["Tingkat Kabupaten/Kota", "Bahasa Arab"],
     file: "assets/certificates/oba-7-2024-juara-2.png",
+    pdf: "assets/certificates/oba-7-2024-juara-2.pdf",
     rank: 2,
   },
   {

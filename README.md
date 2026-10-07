@@ -27,7 +27,7 @@ alias: Zidan
 role: Full Stack Web Developer, IoT Developer, Network Enthusiast
 education: Sistem Informasi, UIN Sunan Ampel Surabaya, 2026
 company: CodeBoost Creative
-website: https://codeboost.id
+website: https://www.codeboost.id
 portfolio: https://www.zdnnaaf.my.id
 location: Gresik, Jawa Timur, Indonesia
 focus:
@@ -57,7 +57,7 @@ CodeBoost Creative adalah brand yang saya bangun untuk mengerjakan solusi digita
 
 <div align="center">
 
-[![CodeBoost Creative](https://img.shields.io/badge/CodeBoost%20Creative-codeboost.id-2563eb?style=for-the-badge&logo=google-chrome&logoColor=white)](https://codeboost.id)
+[![CodeBoost Creative](https://img.shields.io/badge/CodeBoost%20Creative-www.codeboost.id-2563eb?style=for-the-badge&logo=google-chrome&logoColor=white)](https://www.codeboost.id)
 
 </div>
 
@@ -102,7 +102,7 @@ CodeBoost Creative adalah brand yang saya bangun untuk mengerjakan solusi digita
 
 ## Project yang Pernah Saya Buat
 
-Beberapa project di bawah ini sudah pernah saya kerjakan. Link demo dan repository akan saya lengkapi bertahap.
+Beberapa project di bawah ini sudah pernah saya kerjakan. Empat di antaranya sudah ada dokumentasi foto di portfolio, sisanya menyusul bertahap.
 
 - Sistem e-voting dengan verifikasi wajah
 - Sistem administrasi surat organisasi
@@ -158,7 +158,7 @@ Beberapa project di bawah ini sudah pernah saya kerjakan. Link demo dan reposito
 [![Portfolio](https://img.shields.io/badge/Portfolio-Visit%20Website-0f766e?style=for-the-badge&logo=google-chrome&logoColor=white)](https://www.zdnnaaf.my.id)
 [![Instagram](https://img.shields.io/badge/Instagram-@danzz_isnn-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/danzz_isnn)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Zidan%20Nafiil-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/zidan-nafiil-64213338a/)
-[![CodeBoost](https://img.shields.io/badge/CodeBoost-Creative-2563eb?style=for-the-badge&logo=google-chrome&logoColor=white)](https://codeboost.id)
+[![CodeBoost](https://img.shields.io/badge/CodeBoost-Creative-2563eb?style=for-the-badge&logo=google-chrome&logoColor=white)](https://www.codeboost.id)
 
 </div>
 

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
@@ -27,6 +27,7 @@
     <link
       id="dynamic-favicon"
       rel="icon"
+      type="image/webp"
       href="https://www.zdnnaaf.my.id/foto.webp"
     />
     <link rel="apple-touch-icon" href="https://www.zdnnaaf.my.id/foto.webp" />
@@ -87,7 +88,7 @@
             "affiliation": {
               "@type": "Organization",
               "name": "CodeBoost Creative",
-              "url": "https://codeboost.my.id/"
+              "url": "https://www.codeboost.id/"
             },
             "knowsAbout": [
               "Full Stack Web Development",
@@ -110,7 +111,7 @@
               "https://github.com/ZidanNaaf",
               "https://instagram.com/danzz_isnn",
               "https://www.linkedin.com/in/zidan-nafiil-64213338a/",
-              "https://codeboost.my.id/"
+              "https://www.codeboost.id/"
             ],
             "hasCredential": [
               {
@@ -209,9 +210,9 @@
     <div id="blob-1" class="bg-blob"></div>
     <div id="blob-2" class="bg-blob"></div>
     <div id="blob-3" class="bg-blob"></div>
-    <div id="cursor-ring"></div>
-    <div id="cursor-dot"></div>
-    <div id="cursor-preview">
+    <div id="cursor-ring" aria-hidden="true"></div>
+    <div id="cursor-dot" aria-hidden="true"></div>
+    <div id="cursor-preview" aria-hidden="true">
       <div class="preview-card">
         <img alt="" />
         <div class="preview-caption"></div>
@@ -409,7 +410,7 @@
                 <h2 class="mt-3 text-3xl font-bold text-slate-950 sm:text-4xl dark:text-white">Beberapa hal yang pernah saya buat.</h2>
               </div>
               <p class="max-w-xl text-sm leading-6 text-slate-600 dark:text-slate-300">
-                Link demo dan repository akan saya lengkapi bertahap. Untuk sekarang, ini gambaran jenis sistem yang sering saya kerjakan.
+                Ini 3 sistem yang paling sering diminta â€” marketplace dengan QRIS &amp; wallet, ujian online dengan pembayaran, sampai e-voting dengan verifikasi wajah. Kalau kamu punya kebutuhan mirip, atau masih gambaran kasar pun nggak apa-apa, cerita aja dulu. <a href="#contact" class="font-semibold text-brand hover:underline">Klik di sini untuk diskusi via WhatsApp â†’</a>
               </p>
             </div>
 
@@ -634,16 +635,28 @@
                       {{ tag }}
                     </span>
                   </div>
-                  <a
-                    v-if="cert.file"
-                    :href="cert.file"
-                    target="_blank"
-                    rel="noopener"
-                    class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand hover:underline"
-                  >
-                    Lihat Sertifikat
-                    <iconify-icon icon="solar:arrow-right-up-linear" aria-hidden="true"></iconify-icon>
-                  </a>
+                  <div class="mt-4 flex flex-wrap gap-4">
+                    <a
+                      v-if="cert.file"
+                      :href="cert.file"
+                      target="_blank"
+                      rel="noopener"
+                      class="inline-flex items-center gap-1.5 text-sm font-semibold text-brand hover:underline"
+                    >
+                      Lihat Sertifikat
+                      <iconify-icon icon="solar:arrow-right-up-linear" aria-hidden="true"></iconify-icon>
+                    </a>
+                    <a
+                      v-if="cert.pdf"
+                      :href="cert.pdf"
+                      target="_blank"
+                      rel="noopener"
+                      class="inline-flex items-center gap-1.5 text-sm font-semibold text-slate-500 hover:underline dark:text-slate-400"
+                    >
+                      Unduh PDF
+                      <iconify-icon icon="solar:download-linear" aria-hidden="true"></iconify-icon>
+                    </a>
+                  </div>
                 </div>
               </article>
             </div>
@@ -698,15 +711,15 @@
           return {
             darkMode: false,
             mobileOpen: false,
-            profileImage: "https://porto.codeboost.my.id/foto.webp",
+            profileImage: "https://www.zdnnaaf.my.id/foto.webp",
             profileImageCandidates: [
-              "https://porto.codeboost.my.id/foto.webp",
-              "https://porto.codeboost.my.id/foto.png",
-              "https://porto.codeboost.my.id/foto.jpg",
-              "https://porto.codeboost.my.id/foto.jpeg",
+              "https://www.zdnnaaf.my.id/foto.webp",
+              "https://www.zdnnaaf.my.id/foto.png",
+              "https://www.zdnnaaf.my.id/foto.jpg",
+              "https://www.zdnnaaf.my.id/foto.jpeg",
             ],
             fallbackImage:
-              "https://porto.codeboost.my.id/foto.webp",
+              "https://www.zdnnaaf.my.id/foto.webp",
             navItems: [
               { id: "home", label: "Home" },
               { id: "about", label: "About" },
@@ -842,5 +855,5 @@
       }).mount("#app");
     </script>
     <script src="assets/js/site-interactions.js"></script>
-  <script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a2341cc6a8fbc261',t:'MTc4NTQxMTg3Ng=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a23421130c84c261',t:'MTc4NTQxMjA1Mg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a2438cf33a0eb841',t:'MTc4NTU3Mzc1Nw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a2438f778e02b841',t:'MTc4NTU3Mzg2MQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a259efcf3e0a5fdf',t:'MTc4NTgwODQ5Mw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+  </body>
 </html>

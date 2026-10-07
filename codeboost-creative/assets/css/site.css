@@ -1,0 +1,332 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(18px);
+}
+
+.dark .glass {
+  background: rgba(6, 17, 31, 0.76);
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #22d3ee, #818cf8, #14b8a6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-pad {
+  padding-top: 6.5rem;
+  padding-bottom: 5rem;
+}
+
+/* Anchor tidak ketutup header fixed */
+#home,
+#services,
+#why-us,
+#process,
+#projects,
+#contact {
+  scroll-margin-top: 6rem;
+}
+
+::selection {
+  background: #0891b2;
+  color: #ffffff;
+}
+
+/* ---------- Scroll reveal ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.is-in {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+@keyframes bounce-chevron {
+  0%, 100% { transform: translate(-50%, 0); }
+  50% { transform: translate(-50%, 8px); }
+}
+.scroll-cue {
+  animation: bounce-chevron 2s ease-in-out infinite;
+}
+
+/* ---------- Interactive gradient background ---------- */
+.bg-blob {
+  position: fixed;
+  width: 58vw;
+  height: 58vw;
+  max-width: 780px;
+  max-height: 780px;
+  border-radius: 9999px;
+  filter: blur(80px) saturate(1.4);
+  pointer-events: none;
+  z-index: -10;
+  will-change: transform;
+}
+#blob-1 {
+  top: -18%;
+  left: -14%;
+  background: radial-gradient(circle, rgba(8, 145, 178, 0.38), transparent 68%);
+}
+#blob-2 {
+  bottom: -22%;
+  right: -14%;
+  background: radial-gradient(circle, rgba(20, 184, 166, 0.32), transparent 68%);
+}
+#blob-3 {
+  top: 30%;
+  left: 38%;
+  width: 40vw;
+  height: 40vw;
+  max-width: 560px;
+  max-height: 560px;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.26), transparent 70%);
+}
+.dark #blob-1 {
+  background: radial-gradient(circle, rgba(8, 145, 178, 0.5), transparent 68%);
+}
+.dark #blob-2 {
+  background: radial-gradient(circle, rgba(20, 184, 166, 0.42), transparent 68%);
+}
+.dark #blob-3 {
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.36), transparent 70%);
+}
+.grain-overlay {
+  position: fixed;
+  inset: -80px;
+  z-index: -9;
+  pointer-events: none;
+  opacity: 0.1;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  background-repeat: repeat;
+  background-size: 180px 180px;
+  animation: grain-shift 0.5s steps(3) infinite;
+}
+.dark .grain-overlay {
+  opacity: 0.16;
+  mix-blend-mode: soft-light;
+}
+@keyframes grain-shift {
+  0% { transform: translate(0, 0); }
+  33% { transform: translate(-2%, 1%); }
+  66% { transform: translate(1%, -2%); }
+  100% { transform: translate(0, 0); }
+}
+
+/* ---------- Adaptive morphing cursor ---------- */
+body.has-custom-cursor,
+body.has-custom-cursor a,
+body.has-custom-cursor button {
+  cursor: none !important;
+}
+#cursor-dot,
+#cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  border-radius: 9999px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  will-change: transform, width, height, opacity;
+}
+body.has-custom-cursor #cursor-dot,
+body.has-custom-cursor #cursor-ring {
+  opacity: 1;
+}
+#cursor-dot {
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  mix-blend-mode: difference;
+  transition: opacity 0.2s ease;
+}
+#cursor-ring {
+  width: 34px;
+  height: 34px;
+  background: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.55);
+  mix-blend-mode: difference;
+  transition: width 0.35s cubic-bezier(0.16, 1, 0.3, 1), height 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    border-radius 0.35s ease, opacity 0.25s ease, border-color 0.25s ease;
+}
+#cursor-ring.is-link {
+  width: 100px;
+  height: 100px;
+  border-color: rgba(255, 255, 255, 0.4);
+}
+#cursor-ring.is-text {
+  width: 3px;
+  height: 30px;
+  border-radius: 2px;
+}
+#cursor-ring.is-preview {
+  opacity: 0;
+}
+
+/* ---------- Hover image preview ---------- */
+#cursor-preview {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9998;
+  pointer-events: none;
+  width: 220px;
+  height: 260px;
+  opacity: 0;
+  transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+#cursor-preview.is-visible {
+  opacity: 1;
+}
+#cursor-preview .preview-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  transform: scale(0.55) rotate(-8deg);
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 30px 60px rgba(2, 6, 23, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+#cursor-preview.is-visible .preview-card {
+  transform: scale(1) rotate(-3deg);
+}
+#cursor-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#cursor-preview .preview-badge {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, rgba(8, 145, 178, 0.92), rgba(99, 102, 241, 0.85));
+  color: #fff;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+}
+#cursor-preview .preview-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.6rem 0.8rem;
+  background: linear-gradient(to top, rgba(2, 6, 23, 0.85), transparent);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+@media (hover: none), (pointer: coarse) {
+  #cursor-dot,
+  #cursor-ring,
+  #cursor-preview {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bg-blob,
+  .grain-overlay {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* ---------- Glass cards with mouse-tracked spotlight glow ---------- */
+.glass-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+.dark .glass-card {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.spotlight-card {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+.spotlight-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border-radius: inherit;
+  background: radial-gradient(280px circle at var(--mx, 50%) var(--my, 50%), rgba(8, 145, 178, 0.22), transparent 72%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+.dark .spotlight-card::before {
+  background: radial-gradient(280px circle at var(--mx, 50%) var(--my, 50%), rgba(45, 212, 191, 0.2), transparent 72%);
+}
+.spotlight-card:hover::before {
+  opacity: 1;
+}
+.spotlight-card > * {
+  position: relative;
+  z-index: 1;
+}
+/* Process cards: badge -top-4 keluar kartu, jangan clip */
+.spotlight-card.process-card {
+  overflow: visible;
+}
+.card-number {
+  z-index: 0 !important;
+}
+
+/* ---------- Scroll progress bar ---------- */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  z-index: 60;
+  background: transparent;
+  pointer-events: none;
+}
+#scroll-progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(to right, #0891b2, #14b8a6);
+}
+
+@media (hover: none), (pointer: coarse) {
+  .spotlight-card::before {
+    display: none;
+  }
+}
