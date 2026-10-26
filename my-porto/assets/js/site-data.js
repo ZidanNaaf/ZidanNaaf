@@ -159,6 +159,14 @@ window.SITE_PROJECTS = [
     tags: ["Face Recognition", "Python", "Web Dashboard"],
     photos: [],
   },
+  {
+    icon: "solar:magic-stick-3-bold-duotone",
+    title: "AI Music Video Project",
+    description:
+      "Proyek AI music video — generasi visual dan audio berbasis AI untuk konten musik digital.",
+    tags: ["AI", "Computer Vision", "Video Generation"],
+    photos: [],
+  },
 ];
 
 window.SITE_CERTIFICATES = [
