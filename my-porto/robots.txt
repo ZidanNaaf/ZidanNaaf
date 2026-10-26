@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://www.zdnnaaf.my.id/sitemap.xml
