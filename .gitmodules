@@ -1,0 +1,6 @@
+[submodule "my-porto"]
+	path = my-porto
+	url = https://github.com/ZidanNaaf/my-porto.git
+[submodule "codeboost-creative"]
+	path = codeboost-creative
+	url = https://github.com/ZidanNaaf/codeboost-creative.git

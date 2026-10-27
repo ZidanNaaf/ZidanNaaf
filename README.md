@@ -156,7 +156,7 @@ Beberapa project di bawah ini sudah pernah saya kerjakan. Empat di antaranya sud
 
 [![WhatsApp](https://img.shields.io/badge/WhatsApp-Chat%20Langsung-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/6285608764149)
 [![Portfolio](https://img.shields.io/badge/Portfolio-Visit%20Website-0f766e?style=for-the-badge&logo=google-chrome&logoColor=white)](https://www.zdnnaaf.my.id)
-[![Instagram](https://img.shields.io/badge/Instagram-@danzz_isnn-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/danzz_isnn)
+[![Instagram](https://img.shields.io/badge/Instagram-@zdnnaaf_-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/zdnnaaf_)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Zidan%20Nafiil-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/zidan-nafiil-64213338a/)
 [![CodeBoost](https://img.shields.io/badge/CodeBoost-Creative-2563eb?style=for-the-badge&logo=google-chrome&logoColor=white)](https://www.codeboost.id)
 
